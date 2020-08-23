@@ -1,6 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React in WordPress and Docker container
 
-## Available Scripts
+This React project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and build was tested in WordPress latest version, running as Docker container.
+
+## How to test?
+
+### Spin up WordPress instance
+
+Find `docker-compose.yml` on root directory of this project, and spin up wordpress instance.
+
+Please check few things before you execute below command:
+- Docker installed
+- Ports mentioned in docker-compose should be available
+  - Default port for WordPress is `8000`
+- You will not need `phpmyadmin` here, but in case if you need to access it, it is set on port `8080`
+- You will get access to WordPress files
+
+```
+docker-compose up -d
+```
+
+Once all containers are ready, you can access WordPress instance on your [localhost:8000](http://localhost:8000).
+
+Follow all instructions there to setup WordPress.
+
+### Get the test build
+
+You can `build` this `React` project to get the build files. Alternatively, you can use compressed build copy committed here in root directory, `build.zip`.
+
+To build the project and start in your local, simply follow below `Available Scripts` section.
+
+### Set React build in WordPress
+
+- Make `react` directory in root of WordPress
+- Place all build contents to this `react` directory
+
+### Make React page / post in WordPress
+
+- Go to WordPress admin, [http://localhost:8000/wp-admin](http://localhost:8000/wp-admin)
+- Create a new page or new post
+- Select `Code Editor` from right side menu (or Ctrl + Shft + Alt + M)
+- Add some title and Paste below code
+```javascript
+<noscript>
+You need to enable JavaScript to view this page.
+</noscript>
+<div id="root"></div>
+<script src="/react/static/js/main.fdbaff59.js"></script>
+```
+- Please check your build JavaScript file name above, it might be different if you have run the build and not using build from this repository.
+- Change to `Visual Editor` and add any contents
+- Preview / Publish this new post / page
+
+### ToDos
+
+- [] Unit test
+- [] CSS is not set if you test in WordPress, but when you test in local, you can see something like ~[capture screen](https://github.com/anjee10/apnic-test-app/blob/master/resources/capture-react-app-localhost.png "this capture screen")
+- [] Sortable React package is used here to drag and drop sorting, it drags but fails while you drop, it goes back.
+
+## Available Scripts for local setup
 
 In the project directory, you can run:
 
