@@ -53,9 +53,9 @@ You need to enable JavaScript to view this page.
 
 ### ToDos
 
-- [] Unit test
-- [] CSS is not set if you test in WordPress, but when you test in local, you can see something like ~[capture screen](https://github.com/anjee10/apnic-test-app/blob/master/resources/capture-react-app-localhost.png "this capture screen")
-- [] Sortable React package is used here to drag and drop sorting, it drags but fails while you drop, it goes back.
+- [ ] Unit test
+- [ ] CSS is not set if you test in WordPress, but when you test in local, you can see something like ~[capture screen](https://github.com/anjee10/apnic-test-app/blob/master/resources/capture-react-app-localhost.png "this capture screen")
+- [ ] Sortable React package is used here to drag and drop sorting, it drags but fails while you drop, it goes back.
 
 ## Available Scripts for local setup
 
