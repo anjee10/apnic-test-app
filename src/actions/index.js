@@ -1,6 +1,6 @@
-export const PAGINATION_CLICK = 'PAGINATION_CLICK'
+export const PAGINATION_CLICK = "PAGINATION_CLICK"
 
-export const handlePaginationClick = value => ({
+export const handlePaginationClick = (value) => ({
   type: PAGINATION_CLICK,
-  payload: value
+  payload: value,
 })

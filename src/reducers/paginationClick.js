@@ -1,14 +1,14 @@
-import { PAGINATION_CLICK } from '../actions'
+import { PAGINATION_CLICK } from "../actions"
 
 const initState = {
-  currentPage: 0
+  currentPage: 0,
 }
 
 export default (state = initState, { type, payload }) => {
   switch (type) {
     case PAGINATION_CLICK:
       return {
-        currentPage: payload
+        currentPage: payload,
       }
     default:
       return state

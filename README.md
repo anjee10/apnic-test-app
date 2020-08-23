@@ -9,6 +9,7 @@ This React project was bootstrapped with [Create React App](https://github.com/f
 Find `docker-compose.yml` on root directory of this project, and spin up wordpress instance.
 
 Please check few things before you execute below command:
+
 - Docker installed
 - Ports mentioned in docker-compose should be available
   - Default port for WordPress is `8000`
@@ -40,6 +41,7 @@ To build the project and start in your local, simply follow below `Available Scr
 - Create a new page or new post
 - Select `Code Editor` from right side menu (or Ctrl + Shft + Alt + M)
 - Add some title and Paste below code
+
 ```javascript
 <noscript>
 You need to enable JavaScript to view this page.
@@ -47,6 +49,7 @@ You need to enable JavaScript to view this page.
 <div id="root"></div>
 <script src="/react/static/js/main.fdbaff59.js"></script>
 ```
+
 - Please check your build JavaScript file name above, it might be different if you have run the build and not using build from this repository.
 - Change to `Visual Editor` and add any contents
 - Preview / Publish this new post / page
