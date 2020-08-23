@@ -53,6 +53,7 @@ You need to enable JavaScript to view this page.
 
 ### ToDos
 
+- [ ] Fetch data one time only
 - [ ] Use all JSON data to fill up listing details
 - [ ] CSS is not set if you test in WordPress, but when you test in local, you can see something like this [capture screen](https://github.com/anjee10/apnic-test-app/blob/master/resources/capture-react-app-localhost.png "this capture screen"). If you check in WordPress, it will look like this [capture screen](https://github.com/anjee10/apnic-test-app/blob/master/resources/capture-wordpress-localhost.png "this capture screen")
 - [ ] Sortable React package is used here to drag and drop sorting, it drags but fails while you drop, it goes back.
